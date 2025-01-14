@@ -28,6 +28,10 @@ body{
 header{
     display: flex;
     justify-content: center;
+    position: sticky;
+    top:0 ;
+    padding: 10px;
+    z-index: 5;
 }
 
 
@@ -47,6 +51,7 @@ header{
     margin: 0;
     width: 98vw;
     height: 15vh;
+    
 }
 
 
@@ -243,7 +248,7 @@ header{
     padding: 30px;
     padding-bottom: 50px;
     height: 100%;
-    width:400px;
+    width:300px;
     color: white;
 }
 .cards__section2 h1{
@@ -256,17 +261,38 @@ header{
     margin: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
+    padding: 18px;
+}
+
+.--blue{
+    border: 15px solid;
+    border-color: blue
+}
+.--red{
+    border: 15px solid;
+    border-color: red;
+}
+.--purple{
+    border: 15px solid;
+    border-color: #8900f2;
 }
 
 .cards__section2 p{
     .text;
     text-align: left;
+    margin: 0;
+    margin-top: 10px;
 }
 .button__section2{
-    margin: 30px;
-    margin-top: 50px;
+    display: flex;
+    justify-content: last baseline;
+    align-items: center;
+    padding-left: 0;
+    margin: 5px;
+    margin-right: 80px;
+    margin-top: 30px;
     margin-bottom: 0;
-    gap: 15px
+    gap: 25px
 }
 .button__section2 button{
     .text;
@@ -274,4 +300,42 @@ header{
     font-size: 18px;
     padding: 15px;
     border: none;
+}
+
+
+
+
+/*-------------------SECCION 3----------------------*/
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.container__section3{
+    margin-top: 50px;
+    background-color: #000314;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 1400px;
+}
+.container__section3 p{
+    color: white;
+    font-family: var(--font-family);
+}
+.img__section3{
+    width: 700px;
+}
+
+.img__section3 img{
+    position: relative;
+    z-index: 2;
+    transform: translateX(-150px);
+    transform: translateY(-100px);
+    width: 700px;
+    height: 700px;
 }
